@@ -1,0 +1,21 @@
+%YAML 1.2
+---
+# See http://www.sublimetext.com/docs/syntax.html
+file_extensions:
+  - hs
+scope: source.hsx
+extends: Packages/Haskell/Haskell.sublime-syntax
+contexts:
+  main:
+    - meta_prepend: true
+    - match: \[hsx\|
+      push: hsx
+  hsx:
+    - meta_scope: scope:text.html.basic
+    - include: 'scope:text.html.basic'
+    - match: \{
+      embed: scope:source.haskell
+      embed_scope: source.haskell.embedded
+      escape: \}
+    - match: \|\]
+      pop: true
