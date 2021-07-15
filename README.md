@@ -1,6 +1,6 @@
 # Sublime HSX Syntax Highlighting
 
-This package enables HTML syntax highlighting inside HSX quasiquotes in Haskell source code.
+This package enables HTML syntax highlighting inside [HSX quasiquotes](https://ihp.digitallyinduced.com/Guide/hsx.html) in Haskell source code.
 
 PRs are welcome.
 
